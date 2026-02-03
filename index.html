@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baby Shower</title>
+
+  <style>
+    :root {
+      --primary: #b7c4b1;
+      --secondary: #f5f3ef;
+      --accent: #8a9a8d;
+      --text: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    /* Lista de regalos */
+    .gift-list ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .gift-list li {
+      background: #fff;
+      margin: 12px 0;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .gift-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .buy-link {
+      background: #d9d6cf;
+      color: #333;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .reserve-link {
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: var(--primary);
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .gift-list li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Baby Shower de KasDav</h1>
+    <p>Nos encantaría que nos acompañes a celebrar esta etapa tan especial 🤍</p>
+  </header>
+
+  <section>
+    <h2>📅 Detalles del Evento</h2>
+    <p><strong>Fecha:</strong> 21 de marzo</p>
+    <p><strong>Hora:</strong> 17:00</p>
+    <p><strong>Lugar:</strong> [Dirección]</p>
+  </section>
+
+  <section>
+    <h2>💬 Confirmar Asistencia</h2>
+    <p>Por favor confírmanos tu asistencia para esperarte con mucho cariño.</p>
+    <a 
+      href="https://wa.me/672882364text=Hola%20confirmo%20mi%20asistencia%20al%20baby%20shower%20🤍"
+      target="_blank"
+      class="reserve-link"
+    >
+      Confirmar por WhatsApp
+    </a>
+  </section>
+
+  <section class="gift-list">
+    <h2>🎁 Lista de Regalos</h2>
+    <p>Puedes comprar el regalo directamente o marcarlo como reservado para evitar duplicados.</p>
+
+    <ul>
+      <li>
+        <span>🧷 Pañales</span>
+        <div class="gift-actions">
+          <a href="https://nappy.es/dodot/6045-panales-talla-0-sensitive-dodot.html" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>👕 Ropa de bebé</span>
+        <div class="gift-actions">
+          <a href="https://www.mayoral.com/es/es/templates/product-listing-page/recien-nacido" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🍼 Biberones</span>
+        <div class="gift-actions">
+          <a href="https://amzn.eu/d/09zLnmJI" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🛏️ Cuna colecho</span>
+        <div class="gift-actions">
+          <a href="https://es.shein.com/Side-Bed-80-40-100-116cm-Baby-Bed-2-In-1-Baby-Bed-Baby-Cradle-Baby-Bed-Baby-Cradle-For-Newborns-Rocking-Bed-For-Home-And-On-The-Go-With-Wheels-Adjustable-6-Heights-p-70408416.html" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🤱 Succionador de leche</span>
+        <div class="gift-actions">
+          <a href="https://es.shein.com/1000mAh-Rechargeable-Electric-Breast-Pump-Portable-Hands-Free-Breast-Pump-With-3-Modes-And-12-Settings-Includes-17-19-21-27mm-Breast-Shields-1-2-Pcs-White-Pink-p-72466884.html" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🛁 Bañera para bebé</span>
+        <div class="gift-actions">
+          <a href="https://es.shein.com/Foldable-Baby-Bathtub-With-Built-In-Thermometer-And-Bath-Mat-Children-s-Bathtub-With-Baby-Bath-Seat-Baby-Bathtub-With-Stand-Baby-Shower-Gift-For-Boys-Or-Girls-For-0-2-Years-Multiple-Colors-Available-Summer-Goodies-p-128825931.html" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🚼 Carrito de bebé</span>
+        <div class="gift-actions">
+          <a href="https://amzn.eu/d/049y5UfP" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>📹 Cámara de vigilancia</span>
+        <div class="gift-actions">
+          <a href="https://www.amazon.es/Vigilabebes-Inteligente-Temperatura-Comunicaci%C3%B3n-Bidireccional/dp/B0CZRNSXZW" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🎒 Portabebés</span>
+        <div class="gift-actions">
+          <a href="https://m.shein.com/es/Multi-Function-Baby-Carrier-Waist-Stool-4-Season-Baby-Carrier-p-23708997.html" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🧸 Juguete</span>
+        <div class="gift-actions">
+          <a href="https://amzn.eu/d/019Bvbwv" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🎵 Móvil musical</span>
+        <div class="gift-actions">
+          <a href="https://www.vertbaudet.es/movil-musical-bosque-encantado-multicolor.htm" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🎒 Mochila cambiador</span>
+        <div class="gift-actions">
+          <a href="https://es.shein.com/1pc-Baby-Diaper-Bag-Backpack-With-Changing-Station-Multifunction-Portable-Waterproof-Large-Capacity-Travel-Baby-Changing-Bags-p-26799626.html" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🌙 Luz de noche</span>
+        <div class="gift-actions">
+          <a href="https://www.vertbaudet.es/luz-nocturna-proyector-de-estrellas-cloud-b-twilight-azul-claro-liso-con-motivos.htm" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>✂️ Kit de uñas</span>
+        <div class="gift-actions">
+          <a href="https://amzn.eu/d/0ewhkrvp" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+
+      <li>
+        <span>🧼 Esterilizador de biberones</span>
+        <div class="gift-actions">
+          <a href="https://amzn.eu/d/084719l1" target="_blank" class="buy-link">Comprar</a>
+          <a href="https://docs.google.com/spreadsheets/d/1trJxKP7bOzUqo6QE6f4kskDGWfOooAGh11fx4K1l_9k/edit?usp=sharing" target="_blank" class="reserve-link">Reservar</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📍 Ubicación</h2>
+    <p>Consulta el mapa para llegar fácilmente:</p>
+    <iframe 
+      src="PEGA_AQUI_TU_MAPA_DE_GOOGLE"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>Con mucho cariño ✨ ¡Te esperamos!</p>
+  </footer>
+
+</body>
+</html>
